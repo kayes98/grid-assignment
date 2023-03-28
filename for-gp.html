@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .ff1 {
+            grid-area: header;
+            display: grid;
+            align-items: center;
+            background-color: limegreen;
+        }
+
+
+        .ff2 {
+            grid-area: menu;
+            display: grid;
+            align-items: center;
+            background-color: violet;
+        }
+
+        .ff3 {
+            grid-area: hero;
+            display: grid;
+            align-items: center;
+            background-color: goldenrod;
+        }
+
+        .ff4 {
+            grid-area: main;
+            display: grid;
+            align-items: center;
+            background-color: orangered;
+        }
+
+        .ff5 {
+            grid-area: banner;
+            background-color: yellowgreen;
+        }
+
+        .ff6 {
+            grid-area: extra;
+            background-color: tomato;
+        }
+
+        .ff7 {
+            grid-area: image;
+            background-color: lightseagreen;
+        }
+
+        .ff8 {
+            grid-area: blank;
+            background-color: white;
+        }
+
+        .container {
+            display: flex;
+            margin-left: 10px;
+
+
+        }
+
+        .fh2 h2 {
+            color: black;
+            text-align: center;
+            width: 500%;
+        }
+
+        .first-appear2 {
+            display: grid;
+            text-align: center;
+            width: 500%;
+
+            grid-template-rows: 30px 190px 55px 45px;
+            grid-template-areas: 'header menu menu menu menu menu' 'hero hero hero hero hero hero' 'main main main blank blank image' 'main main main blank blank extra' 'banner banner banner banner banner banner';
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <section class="container">
+        <div class="fh2">
+            <h2>Desktop</h2>
+
+            <div class="first-appear2">
+                <div class="ff1">
+                    Header
+                </div>
+                <div class="ff2">
+                    Menu
+                </div>
+                <div class="ff3">
+                    Hero
+                </div>
+                <div class="ff4">
+                    Main
+                </div>
+                <div class="ff5">
+                    <p>Banner</p>
+                </div>
+                <div class="ff6">
+                    <p>Extra</p>
+                </div>
+                <div class="ff7">
+                    <p>Image</p>
+                </div>
+                <div class="ff8">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

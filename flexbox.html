@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        h1 {
+            color: darkblue;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .container {
+
+            height: 300px;
+            border: 2px dashed rgb(240, 174, 34);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .container1 {
+            margin: auto;
+            width: 50%;
+            height: 100%;
+            border: 2px dashed rgb(240, 174, 34);
+            display: flex;
+
+
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid gray;
+            /* font-size: 2em; */
+        }
+
+        .box1 {
+            width: 100px;
+            padding-left: 10px;
+            border: 2px dashed gray;
+            font-size: 1.5em;
+        }
+
+        #menu1 {
+            order: 1;
+            border: 2px solid greenyellow;
+
+        }
+
+        #menu2 {
+            order: 2;
+            flex-grow: 1;
+        }
+
+        p {
+            font-family: cursive;
+        }
+
+        .box1 {
+            border-bottom: 2px solid gray;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>FlexBox</h1>
+    <!-- <div class="container">
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-4</div>
+    </div> -->
+    <div class="container1">
+        <div id="menu1" class="box1">
+            <div class="s-border">
+                Box-1
+            </div>
+        </div>
+        <div id="menu2" class="box1">Box-2
+            <article class="box2">
+                <h3>Blog-1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum cumque, laboriosam tempora quisquam
+                    nobis veniam sit ab quae placeat perferendis quam, architecto, quaerat maiores debitis non
+                    dignissimos. Adipisci, pariatur delectus!</p>
+            </article>
+            <article class="box2">
+                <h3>Blog-2</h3>
+                <p>Harum excepturi magni suscipit impedit perspiciatis vitae veniam. Aut, adipisci, voluptates odit sed
+                    repudiandae sint aperiam tempora architecto incidunt quo distinctio ut culpa reprehenderit odio
+                    harum esse quibusdam totam reiciendis!</p>
+            </article>
+
+            <article class="box2">
+                <h3>Blog-3</h3>
+                <p>Quidem maxime voluptatem repellendus rem reiciendis iusto aperiam soluta dolor doloribus asperiores
+                    libero hic non velit, excepturi quia suscipit architecto. Quaerat perspiciatis et consequuntur,
+                    deserunt aliquid aspernatur tempora. Rem, doloribus!</p>
+            </article>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .ff1 {
+            grid-area: header;
+        }
+
+        .ff2 {
+            grid-area: menu;
+        }
+
+        .ff3 {
+            grid-area: hero;
+        }
+
+        .ff4 {
+            grid-area: main;
+        }
+
+        .ff5 {
+            grid-area: banner;
+        }
+
+        .ff6 {
+            grid-area: extra;
+        }
+
+        .ff7 {
+            grid-area: image;
+        }
+
+        .ff8 {
+            grid-area: blank;
+        }
+
+        .container {
+            display: inline-flex;
+            margin-right: 50px;
+        }
+
+        .first-appear {
+            display: grid;
+            text-align: center;
+            width: 150%;
+            grid-template-columns: 100%;
+            grid-template-rows: 30px 30px 80px 80px;
+
+
+        }
+
+        .fh h2 {
+            color: Black;
+            text-align: center;
+            width: 150%;
+        }
+
+        .f1 {
+            display: grid;
+            align-items: center;
+            color: white;
+            background-color: darkblue;
+        }
+
+        .f2 {
+            padding-top: 5px;
+            color: white;
+            background-color: crimson;
+        }
+
+        .f3 {
+            display: grid;
+            align-items: center;
+            color: white;
+            background-color: dodgerblue;
+        }
+
+        .f4 {
+            display: grid;
+            align-items: center;
+            color: white;
+            background-color: midnightblue;
+        }
+
+        .f5 {
+            background-color: darkgoldenrod;
+        }
+
+        .f6 {
+            background-color: teal;
+        }
+
+        .f7 {
+            background-color: aquamarine;
+        }
+
+        .fh1 h2 {
+            color: Black;
+            text-align: center;
+            width: 250%;
+        }
+
+        .first-appear1 {
+            display: grid;
+            text-align: center;
+            margin-left: 10px;
+            width: 250%;
+
+            grid-template-rows: 30px 130px 110px 50px;
+            grid-template-areas: 'header header header header header header' 'hero hero hero hero hero hero' 'menu main main main main main' 'menu banner banner banner banner banner' 'menu extra extra extra extra image';
+
+        }
+
+        .ff1 {
+
+            display: grid;
+            align-items: center;
+            color: white;
+            background-color: darkblue;
+        }
+
+
+        .ff2 {
+
+            display: grid;
+            align-items: center;
+            color: white;
+            background-color: crimson;
+        }
+
+        .ff3 {
+            display: grid;
+            align-items: center;
+            color: white;
+            background-color: dodgerblue;
+        }
+
+        .ff4 {
+            display: grid;
+            align-items: center;
+            color: white;
+            background-color: midnightblue;
+        }
+
+        .ff5 {
+            background-color: darkgoldenrod;
+        }
+
+        .ff6 {
+            background-color: teal;
+        }
+
+        .ff7 {
+            background-color: aquamarine;
+        }
+
+        .cont {
+            margin-left: 160px;
+        }
+
+        .fh2 h2 {
+            color: black;
+            text-align: center;
+            width: 600%;
+        }
+
+        .ff8 {
+            background-color: white;
+        }
+
+        .first-appear2 {
+            display: grid;
+            text-align: center;
+            margin-left: 10px;
+            width: 600%;
+
+            grid-template-rows: 30px 190px 55px 45px;
+            grid-template-areas: 'header menu menu menu menu menu' 'hero hero hero hero hero hero' 'main main main blank blank image' 'main main main blank blank extra' 'banner banner banner banner banner banner';
+
+        }
+
+        .marg {
+            margin-left: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container marg">
+        <div class="fh">
+            <h2>Mobile</h2>
+
+            <div class="first-appear">
+                <div class="f1">
+                    Header
+                </div>
+                <div class="f2">
+                    Menu
+                </div>
+                <div class="f3">
+                    Hero
+                </div>
+                <div class="f4">
+                    Main
+                </div>
+                <div class="f5">
+                    <p>Banner</p>
+                </div>
+                <div class="f6">
+                    <p>Extra</p>
+                </div>
+                <div class="f7">
+                    <p>Image</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="fh1">
+            <h2>Tablet</h2>
+
+            <div class="first-appear1">
+                <div class="ff1">
+                    Header
+                </div>
+                <div class="ff2">
+                    Menu
+                </div>
+                <div class="ff3">
+                    Hero
+                </div>
+                <div class="ff4">
+                    Main
+                </div>
+                <div class="ff5">
+                    <p>Banner</p>
+                </div>
+                <div class="ff6">
+                    <p>Extra</p>
+                </div>
+                <div class="ff7">
+                    <p>Image</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container cont">
+        <div class="fh2">
+            <h2>Desktop</h2>
+
+            <div class="first-appear2">
+                <div class="ff1">
+                    Header
+                </div>
+                <div class="ff2">
+                    Menu
+                </div>
+                <div class="ff3">
+                    Hero
+                </div>
+                <div class="ff4">
+                    Main
+                </div>
+                <div class="ff5">
+                    <p>Banner</p>
+                </div>
+                <div class="ff6">
+                    <p>Extra</p>
+                </div>
+                <div class="ff7">
+                    <p>Image</p>
+                </div>
+                <div class="ff8">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

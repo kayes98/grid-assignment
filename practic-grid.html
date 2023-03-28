@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Practice</title>
+    <style>
+        .item1 {
+            grid-area: header;
+            grid-column: 1/8;
+        }
+
+        .item2 {
+            grid-area: menu;
+            grid-row: 2/7;
+
+        }
+
+        .item3 {
+            grid-area: main;
+            grid-column: 2/7;
+        }
+
+        .item4 {
+            grid-area: aside;
+            grid-row: 2/7;
+        }
+
+        .item5 {
+            grid-area: footer;
+            grid-column: 2/7;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .grid-container {
+            display: grid;
+            background-color: aquamarine;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-areas: 'header header header header header header header' 'menu main main main main main aside' 'footer footer footer footer footer footer footer';
+
+        }
+
+        .grid-container>div {
+            border: 3px solid orangered;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="item1">
+            <h1>Header</h1>
+        </div>
+        <div class="item2">
+            <h1>Menu</h1>
+        </div>
+        <div class="item3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem molestiae doloremque expedita, distinctio
+                aliquid recusandae dolores omnis aliquam quas architecto, porro iste nulla eligendi et aut aperiam sed
+                pariatur eius veritatis mollitia accusamus ducimus! Tempora inventore error omnis ratione voluptates,
+                est ipsa placeat iure illo vero, vitae minima, nam consequuntur possimus. Repellat laudantium accusamus
+                incidunt voluptatum neque dolorem pariatur, nemo placeat ut fuga velit qui, modi cumque explicabo
+                nesciunt! Tempore dolorem mollitia odit nobis, deleniti debitis ipsum eveniet quis, alias odio neque.
+                Esse quas eveniet, nulla dolorem odit perferendis, incidunt iusto veritatis totam atque deleniti illum,
+                delectus voluptatem asperiores est!</p>
+        </div>
+        <div class="item4">
+            <h1>Aside</h1>
+        </div>
+        <div class="item5">
+            <h1>Footer</h1>
+        </div>
+    </div>
+
+    <footer>@Copyrigt, All Rights Received</footer>
+</body>
+
+</html>

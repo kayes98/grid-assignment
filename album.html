@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Album</title>
+    <style>
+        .photo-album {
+            display: flex;
+            flex-wrap: wrap;
+
+
+        }
+
+        .photo-frame {
+            width: 300px;
+            height: 230px;
+            padding: 10px;
+            border: 2px solid goldenrod;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .photo img {
+            width: 300px;
+            height: 230px;
+            border-radius: 10px;
+        }
+
+        .photo-detail {
+            display: none;
+            position: absolute;
+            width: 300px;
+
+            font-weight: 700;
+            top: 0;
+
+        }
+
+        .photo-frame:hover .photo-detail {
+            display: block;
+            background-color: rgba(211, 229, 183, 0.31);
+            border-radius: 10px;
+        }
+
+        .photo-detail h3 {
+            background-color: antiquewhite;
+            text-align: center;
+            border-radius: 50px;
+        }
+
+        .photo-detail p {
+            color: aliceblue;
+        }
+
+
+
+        .cen {
+            color: rgb(65, 65, 244);
+            text-align: center;
+        }
+
+        .hd {
+            color: yellowgreen;
+            text-align: center;
+        }
+
+        .photo-frame:hover .photo {
+            transform: scale(1.5) skew(5deg);
+            transition: transform 2s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="cen">Album Of Nature</h1>
+    <section>
+        <h3 class="hd">Nature Album</h3>
+        <div class="photo-album">
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images/nature.jpg" alt="Nature">
+                </div>
+                <div class="photo-detail">
+                    <h3>Not Candit Or Candit</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem sed quasi optio
+                        corrupti
+                        laborum beatae corporis at eum animi nostrum possimus vel deserunt rem asperiores, maiores
+                        debitis a quidem totam! Consectetur voluptatem, atque in eligendi illo consequatur beatae
+                        laudantium omnis adipisci tempore, rem eius blanditiis velit, officiis veritatis? Minima,
+                        deleniti?</p>
+                </div>
+            </div>
+
+            <div class="photo-album">
+                <div class="photo-frame">
+                    <div class="photo">
+                        <img src="images/nature.jpg" alt="Nature">
+                    </div>
+                    <div class="photo-detail">
+                        <h3>Not Candit Or Candit</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem sed quasi optio
+                            corrupti
+                            laborum beatae corporis at eum animi nostrum possimus vel deserunt rem asperiores, maiores
+                            debitis a quidem totam! Consectetur voluptatem, atque in eligendi illo consequatur beatae
+                            laudantium omnis adipisci tempore, rem eius blanditiis velit, officiis veritatis? Minima,
+                            deleniti?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="photo-album">
+                <div class="photo-frame">
+                    <div class="photo">
+                        <img src="images/nature.jpg" alt="Nature">
+                    </div>
+                    <div class="photo-detail">
+                        <h3>Not Candit Or Candit</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem sed quasi optio
+                            corrupti
+                            laborum beatae corporis at eum animi nostrum possimus vel deserunt rem asperiores, maiores
+                            debitis a quidem totam! Consectetur voluptatem, atque in eligendi illo consequatur beatae
+                            laudantium omnis adipisci tempore, rem eius blanditiis velit, officiis veritatis? Minima,
+                            deleniti?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="photo-album">
+                <div class="photo-frame">
+                    <div class="photo">
+                        <img src="images/nature.jpg" alt="Nature">
+                    </div>
+                    <div class="photo-detail">
+                        <h3>Not Candit Or Candit</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem sed quasi optio
+                            corrupti
+                            laborum beatae corporis at eum animi nostrum possimus vel deserunt rem asperiores, maiores
+                            debitis a quidem totam! Consectetur voluptatem, atque in eligendi illo consequatur beatae
+                            laudantium omnis adipisci tempore, rem eius blanditiis velit, officiis veritatis? Minima,
+                            deleniti?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="photo-album">
+                <div class="photo-frame">
+                    <div class="photo">
+                        <img src="images/nature.jpg" alt="Nature">
+                    </div>
+                    <div class="photo-detail">
+                        <h3>Not Candit Or Candit</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem sed quasi optio
+                            corrupti
+                            laborum beatae corporis at eum animi nostrum possimus vel deserunt rem asperiores, maiores
+                            debitis a quidem totam! Consectetur voluptatem, atque in eligendi illo consequatur beatae
+                            laudantium omnis adipisci tempore, rem eius blanditiis velit, officiis veritatis? Minima,
+                            deleniti?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="photo-album">
+                <div class="photo-frame">
+                    <div class="photo">
+                        <img src="images/nature.jpg" alt="Nature">
+                    </div>
+                    <div class="photo-detail">
+                        <h3>Not Candit Or Candit</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem sed quasi optio
+                            corrupti
+                            laborum beatae corporis at eum animi nostrum possimus vel deserunt rem asperiores, maiores
+                            debitis a quidem totam! Consectetur voluptatem, atque in eligendi illo consequatur beatae
+                            laudantium omnis adipisci tempore, rem eius blanditiis velit, officiis veritatis? Minima,
+                            deleniti?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="photo-album">
+                <div class="photo-frame">
+                    <div class="photo">
+                        <img src="images/nature.jpg" alt="Nature">
+                    </div>
+                    <div class="photo-detail">
+                        <h3>Not Candit Or Candit</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem sed quasi optio
+                            corrupti
+                            laborum beatae corporis at eum animi nostrum possimus vel deserunt rem asperiores, maiores
+                            debitis a quidem totam! Consectetur voluptatem, atque in eligendi illo consequatur beatae
+                            laudantium omnis adipisci tempore, rem eius blanditiis velit, officiis veritatis? Minima,
+                            deleniti?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="photo-album">
+                <div class="photo-frame">
+                    <div class="photo">
+                        <img src="images/nature.jpg" alt="Nature">
+                    </div>
+                    <div class="photo-detail">
+                        <h3>Not Candit Or Candit</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem sed quasi optio
+                            corrupti
+                            laborum beatae corporis at eum animi nostrum possimus vel deserunt rem asperiores, maiores
+                            debitis a quidem totam! Consectetur voluptatem, atque in eligendi illo consequatur beatae
+                            laudantium omnis adipisci tempore, rem eius blanditiis velit, officiis veritatis? Minima,
+                            deleniti?</p>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    </div>
+</body>
+
+</html>

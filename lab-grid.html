@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5</title>
+
+    <style>
+        /* .item1 {
+            grid-area: header;
+        }
+
+        .item2 {
+            grid-area: menu;
+        }
+
+        .item3 {
+            grid-area: main;
+            
+
+        }
+
+        .item4 {
+            grid-area: aside;
+        }
+
+        .item5 {
+            grid-area: footer;
+        } */
+
+        p {
+            text-align: justify;
+        }
+
+
+        .grid-container {
+            display: grid;
+            background-color: cadetblue;
+            grid-template-columns: auto auto auto auto auto auto;
+
+            grid-template-areas: 'header header header header header header' 'menu main main main main aside' 'footer footer footer footer footer footer';
+        }
+
+        .grid-container>div {
+            border: 3px solid blue;
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        .item1 {
+            grid-column: 1/7;
+        }
+
+        .item2 {
+            grid-column: 1/2;
+            grid-row: 2/4;
+
+        }
+
+        .item3 {
+            font-size: 1em;
+            grid-column: 2/6;
+        }
+
+        .item4 {
+            grid-column: 6/7;
+            grid-row: 2/4;
+        }
+
+        .item5 {
+            grid-column: 2/6;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="item1">
+            <h1>Header</h1>
+        </div>
+        <div class="item2">
+            <h1>Menu</h1>
+        </div>
+        <div class="item3">
+            <p>Lorem ipsu. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Animi sequi aspernatur vel quis est eveniet quasi quas
+                repudiandae illum sunt quo qui perspiciatis deleniti praesentium,
+                fugit, excepturi laborum veritatis molestias? . Lorem ipsum
+                dolor sit amet consectetur, adipisicing elit. Ducimus qui
+                provident voluptate temporibus atque? Explicabo, adipisci?
+                Veritatis quae hic dolorum, vitae aperiam voluptates, doloremque
+                necessitatibus impedit quia corporis non ex. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Voluptas dolor excepturi,
+                libero a aperiam sequi nesciunt exercitationem consequuntur nulla
+                facilis hic reiciendis deserunt doloribus autem nihil nemo
+                quaerat rem inventore! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Sint praesentium nostrum aut ipsum animi
+                deleniti dicta amet quod. Eligendi numquam, amet illo velit alias
+                laborum delectus non repellat quaerat voluptate. </p>
+
+        </div>
+
+        <div class="item4">
+            <h1>Aside</h1>
+        </div>
+        <div class="item5">
+            <h1>Footer</h1>
+        </div>
+    </div>
+</body>
+
+</html>
